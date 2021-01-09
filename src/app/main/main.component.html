@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="content">
+  <div class="container">
+    <div class="colums text-center">
+      <div class="column">
+        <h1>Insert title</h1>
+        <h2>Insert sub text :)</h2>
+        <img id="avatar" src="assets/images/profile.jpg" alt="Profile picture"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content text-center background-base-color medium-block">
+  <div class="container">
+    <div class="colums content-center">
+      <div class="column">
+        <h1>Hi! Mijn naam is Daryl</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et pulvinar enim. Nulla fermentum, orci fringilla sollicitudin facilisis, sapien sapien gravida dolor, et vulputate ex lorem id lacus. Nam gravida at lectus finibus dapibus. Proin enim turpis, laoreet eu porta vitae, luctus eget neque. Etiam malesuada placerat arcu, sit amet vehicula erat mollis ac. Proin varius est velit, et molestie neque cursus eget. Maecenas suscipit massa a finibus facilisis. Sed sagittis quis nibh eget porta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content content-center medium-block">
+  <div class="container">
+    <h1 class="text-center">Vaardigheden</h1>
+    <div class="colums skill">
+      <div *ngFor="let skill of skills | keyvalue: originalOrder">
+        <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content content-center medium-block background-base-color">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h1>Projecten</h1>
+      </div>
+    </div>
+    <div class="columns">
+
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,121 @@
+@import '../../styles';
+.content {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    font-family: "Miso Bold", sans-serif;
+    font-size: 40px;
+  }
+  h2 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+  }
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  img:first-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+.container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 auto;
+  width: auto;
+}
+
+.colums {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+
+  h3 {
+    font-family: Arial, sans-serif;
+  }
+}
+
+progress::-moz-progress-bar {
+  background: $base-color-light;
+}
+
+progress::-webkit-progress-value {
+  background: $base-color-light;
+}
+
+progress {
+  background: $base-color-light;
+  border-radius: 9px;
+}
+
+#avatar {
+  border-radius: 15%;
+  width: 35%;
+}
+
+.background-base-color {
+  background-color: $base-color;
+  color: white;
+}
+
+.background-base-color-dark {
+   background-color: $base-color-dark;
+   color: white;
+ }
+
+.background-base-color-light {
+  background-color: $base-color-light;
+  color: white;
+}
+
+.medium-block {
+  padding: 7.5rem 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .container {
+    max-width: 100%;
+  }
+}

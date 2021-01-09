@@ -1,0 +1,13 @@
+$base-color: #5a58e8;
+$base-color-dark: #5858ce;
+$base-color-light: #6d6de8;
+
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@font-face {
+  font-family: 'Miso Bold';
+  src: url('assets/font/miso-bold.ttf');
+}
