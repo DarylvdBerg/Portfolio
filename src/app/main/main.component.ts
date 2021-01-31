@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import DateTimeFormat = Intl.DateTimeFormat;
 import {KeyValue} from '@angular/common';
+import { Repo } from './repo.model';
+import { Subscription } from 'rxjs';
+import { GithubServiceService } from '../shared/github-service.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, OnDestroy {
   dayOfBirth = new Date('1997-11-21');
+
+  repositories: Repo[] = [];
+  repositorySubscription!: Subscription;
 
   skills: {[key: string]: number} = {
     Html: 60,
@@ -23,12 +29,16 @@ export class MainComponent implements OnInit {
 
   originalOrder = (a: KeyValue<number, string>, b: KeyValue<number, string>): number => {
     return 0;
-  }
+  };
 
-  constructor() { }
+  constructor(private service: GithubServiceService) { }
 
   ngOnInit(): void {
-    console.log(this.calculateAge());
+    this.repositorySubscription = this.service.getPublicRepoInformation()
+      .subscribe(repos => {
+        this.repositories = repos;
+        console.log(this.repositories);
+      });
   }
 
   // Calculate age based on my birthday and date of today.
@@ -42,4 +52,7 @@ export class MainComponent implements OnInit {
     return age;
   }
 
+  ngOnDestroy(): void {
+    this.repositorySubscription.unsubscribe();
+  }
 }

@@ -24,9 +24,11 @@
   <div class="container">
     <h1 class="text-center">Vaardigheden</h1>
     <div class="colums skill">
+      <!--
       <div *ngFor="let skill of skills | keyvalue: originalOrder">
         <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>
       </div>
+      -->
     </div>
   </div>
 </section>
@@ -38,7 +40,7 @@
       </div>
     </div>
     <div class="columns">
-
+      <div *ngFor="let repo of this.repositories">{{repo.name}}</div>
     </div>
   </div>
 </section>
