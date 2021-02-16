@@ -31,7 +31,7 @@
   width: auto;
 }
 
-.colums {
+.columns {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem;
@@ -49,6 +49,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+}
+
+.repo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

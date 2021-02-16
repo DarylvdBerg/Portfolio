@@ -1,0 +1,39 @@
+@import '../main.component.scss';
+
+.card {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 10px 0px #4f4c4c;
+  font-family: Arial, sans-serif;
+
+  .underline {
+    border-top: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: "Miso Bold", sans-serif;
+    font-size: 26px;
+  }
+
+  .button {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+    color: $base-color-dark;
+  }
+
+  .button:hover {
+    color: $base-color-light;
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 0px #4f4c4c;
+}
+
+

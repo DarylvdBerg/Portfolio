@@ -23,24 +23,20 @@
 <section class="content content-center medium-block">
   <div class="container">
     <h1 class="text-center">Vaardigheden</h1>
-    <div class="colums skill">
-      <!--
+    <div class="columns skill">
       <div *ngFor="let skill of skills | keyvalue: originalOrder">
         <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>
       </div>
-      -->
     </div>
   </div>
 </section>
 <section class="content content-center medium-block background-base-color">
   <div class="container">
-    <div class="columns">
-      <div class="column">
-        <h1>Projecten</h1>
+    <h1 class="text-center">Projecten</h1>
+    <div class="columns repo">
+      <div *ngFor="let repo of repositories">
+        <app-repo [name]="repo.name" [description]="repo.description" [html_url]="repo.html_url"></app-repo>
       </div>
-    </div>
-    <div class="columns">
-      <div *ngFor="let repo of this.repositories">{{repo.name}}</div>
     </div>
   </div>
 </section>
