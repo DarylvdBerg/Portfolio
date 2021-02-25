@@ -18,11 +18,11 @@ export class MainComponent implements OnInit, OnDestroy {
 
   skills: {[key: string]: number} = {
     Html: 60,
-    Css: 55,
-    Javascript: 75,
+    Css: 60,
+    Javascript: 70,
     Java: 75,
-    'C#': 65,
-    Android: 65,
+    'C#': 60,
+    Android: 70,
     Angular: 60,
     Unity: 60
   };

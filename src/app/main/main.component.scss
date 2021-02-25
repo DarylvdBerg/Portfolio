@@ -72,19 +72,6 @@
   }
 }
 
-progress::-moz-progress-bar {
-  background: $base-color-light;
-}
-
-progress::-webkit-progress-value {
-  background: $base-color-light;
-}
-
-progress {
-  background: $base-color-light;
-  border-radius: 9px;
-}
-
 #avatar {
   border-radius: 15%;
   width: 35%;
