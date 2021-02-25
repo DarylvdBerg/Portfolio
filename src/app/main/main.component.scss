@@ -108,6 +108,12 @@
   }
 }
 
+@media screen and (max-width: 600px){
+  #avatar {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 425px){
   .container {
     max-width: 100%;
