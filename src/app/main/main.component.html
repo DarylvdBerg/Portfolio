@@ -3,8 +3,6 @@
   <div class="container">
     <div class="colums text-center">
       <div class="column">
-        <h1>Insert title</h1>
-        <h2>Insert sub text :)</h2>
         <img id="avatar" src="assets/images/profile.jpg" alt="Profile picture"/>
       </div>
     </div>
@@ -15,7 +13,9 @@
     <div class="colums content-center">
       <div class="column">
         <h1>Hi! Mijn naam is Daryl</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et pulvinar enim. Nulla fermentum, orci fringilla sollicitudin facilisis, sapien sapien gravida dolor, et vulputate ex lorem id lacus. Nam gravida at lectus finibus dapibus. Proin enim turpis, laoreet eu porta vitae, luctus eget neque. Etiam malesuada placerat arcu, sit amet vehicula erat mollis ac. Proin varius est velit, et molestie neque cursus eget. Maecenas suscipit massa a finibus facilisis. Sed sagittis quis nibh eget porta.</p>
+        <p>
+          Leergierig en doorzettingsvermogen zijn twee woorden die mij goed omschrijven. Ik vindt het leuk om nieuwe dingen te leren en mijn kennis te verbreden. In het dagelijks leven ben ik bezig met mijn studie, doe ik hier en daar wat projecten voor mezelf. Uiteindelijk wil ik gaan werken als een full-stack developer en / of mobile development.
+        </p>
       </div>
     </div>
   </div>
@@ -24,9 +24,9 @@
   <div class="container">
     <h1 class="text-center">Vaardigheden</h1>
     <div class="columns skill">
-<!--      <div *ngFor="let skill of skills | keyvalue: originalOrder">-->
-<!--        <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>-->
-<!--      </div>-->
+      <div *ngFor="let skill of skills | keyvalue">
+        <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>
+      </div>
     </div>
   </div>
 </section>
