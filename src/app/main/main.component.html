@@ -14,7 +14,7 @@
       <div class="column">
         <h1>Hi! Mijn naam is Daryl</h1>
         <p>
-          Leergierig en doorzettingsvermogen zijn twee woorden die mij goed omschrijven. Ik vindt het leuk om nieuwe dingen te leren en mijn kennis te verbreden. In het dagelijks leven ben ik bezig met mijn studie, doe ik hier en daar wat projecten voor mezelf. Uiteindelijk wil ik gaan werken als een full-stack developer en / of mobile development.
+          Leergierig, doorzettingsvermogen, nieuwsgierig en enthousiast zijn een paar woorden die mij goed omschrijven. Ik vindt het leuk om nieuwe dingen te leren en mijn kennis te verbreden. In het dagelijks leven ben ik bezig met mijn studie, doe ik hier en daar wat projecten voor mezelf en spendeer ik tijd aan sociale activiteiten. Uiteindelijk wil ik gaan werken als een full-stack developer en / of mobile development.
         </p>
       </div>
     </div>
@@ -24,8 +24,8 @@
   <div class="container">
     <h1 class="text-center">Vaardigheden</h1>
     <div class="columns skill">
-      <div *ngFor="let skill of skills | keyvalue">
-        <app-skill [skillName]="skill.key" [skillValue]="skill.value"></app-skill>
+      <div *ngFor="let skill of skills">
+        <app-skill [skillName]="skill"></app-skill>
       </div>
     </div>
   </div>

@@ -1,29 +1,11 @@
 @import '../main.component.scss';
 
-progress::-webkit-progress-bar{
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-progress::-webkit-progress-value {
-  background: $base-color-light;
-  border-radius: 3px;
-}
-
-progress {
-  background: $base-color-light;
-  border-radius: 5px;
-  position: relative;
-}
-
-progress:before {
-  content: attr(value)'%';
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  position: absolute;
-  font-size: 0.9em;
-  left: 0;
-  right: 0;
+.column {
+  h3 {
+    background-color: rgba(109,109,232, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Miso Bold, Arial;
+    font-size: 30px;
+  }
 }

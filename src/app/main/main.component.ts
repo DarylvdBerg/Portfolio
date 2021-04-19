@@ -16,16 +16,16 @@ export class MainComponent implements OnInit, OnDestroy {
   repositories: Repo[] = [];
   repositorySubscription!: Subscription;
 
-  skills: {[key: string]: number} = {
-    "Html": 60,
-    "Css": 60,
-    "Javascript": 70,
-    "Java": 75,
-    "C#": 60,
-    "Android": 70,
-    "Angular": 60,
-    "Unity": 60
-  };
+  skills = [
+    "Html",
+    "Css",
+    "Javascript",
+    "Java",
+    "C#",
+    "Android",
+    "Angular",
+    "Unity"
+  ];
 
   constructor(private service: GithubServiceService) { }
 
